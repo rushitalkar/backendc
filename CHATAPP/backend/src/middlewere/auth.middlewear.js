@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 
 dotenv.config()
  const protectRoute = async (req , res, next) => {
+  
    try {
       const tokennn = req.headers.cookie.split("=") // two values are genrated array in tokenn
       console.log(tokennn);

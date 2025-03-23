@@ -1,5 +1,6 @@
 import User from "../models/user.model.js"
 import Message from "../models/message.model.js"
+import cloudinary from "../lib/cloudnary.js"
 export const getUsers =async (req,res)=>{
     try {
         const loginUserId = req.user._id
@@ -36,3 +37,33 @@ export const getMessages =async (req,res)=>{
         res.status(500).json({message : "internal server error"})
     }
 }
+
+export const sendMessage =async (req,res)=>{
+    try {
+        const {text , image} = req.body
+        const{id :reciverId} = req.params
+        const senderId = req.user._id
+
+        let imageUrl;
+        if (image) {
+            const uploadResponce = await cloudinary.uploader.upload(image)
+            imageUrl = uploadResponce.secure_url;
+        }
+
+        const newMessage = new Message({
+            text,
+            senderId,
+            reciverId,
+            image : imageUrl
+        })
+
+        await newMessage.save()
+
+        //realtime functionality goes here
+    } catch (error) {
+        res.status(500).json({message : "internal server error"})
+    }
+}
+
+
+
