@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+;
+
+
+*{
+ 
+  box-sizing: border-box;
+
+}
+
+.app{
+  min-height: 100vh;
+  display: grid;
+  background-image: url(./assets/weather.jpg);
+  background-size: cover;
+  background-position: center;
+}
