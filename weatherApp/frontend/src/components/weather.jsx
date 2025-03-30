@@ -53,6 +53,8 @@ const Weather = () => {
                 description : data.weather[0].main,
                 location : data.name,
                 icon : icon,
+                pressure : data.main.pressure,
+                sealevel : data.main.grnd_level,
                 visibility : data.visibility
 
             })
@@ -127,6 +129,23 @@ const Weather = () => {
                         <div class="font-medium text-sm">Visibility</div>
                         <div class="text-sm text-gray-500">{weather.visibility}km</div>
                     </div>
+                    
+                    
+                    
+                </div>
+                <div class="flex flex-row items-center justify-around  mt-6">
+                    <div class="flex flex-col items-center">
+                        <div class="font-medium text-sm">Pressure</div>
+                        <div class="text-sm text-gray-500">{weather.pressure}</div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="font-medium text-sm">Sea Level</div>
+                        <div class="text-sm text-gray-500">{weather.sealevel}</div>
+                    </div>
+                    
+                    
+                    
+                    
                 </div>
             </div>
         </div>
