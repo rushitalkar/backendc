@@ -6,11 +6,19 @@ const app = express()
 import { connectDB } from "./lib/db.js";
 import bodyParser from "body-parser"
 import cookieParser from "cookie-parser"
+import cors from "cors"
+app.use(cors({
+    origin : "http://localhost:5173/",
+    credentials : true,
+}))
 app.use(bodyParser.json())
 
+
 app.use(bodyParser.urlencoded({ extended: false }))
+
 app.use("/api/auth" , authRoutes)
 app.use("/api/messages" , messageRoutes)
+
 
 dotenv.config()
 

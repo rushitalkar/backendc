@@ -15,7 +15,7 @@ const Home = () => {
     return (
 
         <>
-            <div className='max-w-screen-2xl container mx-auto px-4 my-20  md:px-20'>
+            <div name="Home" className='max-w-screen-2xl container mx-auto px-4 my-20  md:px-20'>
                 <div className='flex flex-col md:flex-row'>
                     <div className='md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1'>
                         <span className='text-xl'>Welcome in my Feed</span>
@@ -40,7 +40,7 @@ const Home = () => {
                         <br />
                         <p className='text-sm md:text-md text-justify'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, obcaecati aspernatur nisi provident inventore iure magni ullam quis. Earum ab error culpa, odit veritatis praesentium.</p>
                         <br />
-                        <div className='flex flex-col md:flex-row items-center justify-between space-y-6 flex-y-2 md:flex-y-0 '>
+                        <div className='flex flex-col md:flex-row items-center justify-between  flex-y-2 md:flex-y-0 '>
                             <div className='space-y-2'>
                                 <h1 className='font-bold'>Available On</h1>
                                 <ul className='flex space-x-5'>
@@ -52,7 +52,7 @@ const Home = () => {
 
                                     <li>
                                         {" "}
-                                        <a href=""><FaLinkedinIn className='text-2xl cursor-pointer' /></a>
+                                        <a href="https://www.linkedin.com/in/rushikesh-talkar-5562a9293/" target='_blank'><FaLinkedinIn className='text-2xl cursor-pointer' /></a>
                                     </li>
 
                                     <li>

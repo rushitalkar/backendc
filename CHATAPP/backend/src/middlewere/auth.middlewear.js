@@ -7,10 +7,10 @@ dotenv.config()
   
    try {
       const tokennn = req.headers.cookie.split("=") // two values are genrated array in tokenn
-      console.log(tokennn);
+      
       
       const token = req.headers.cookie.split("=")[1];
-      
+      console.log(req.headers);
       if (!token) {
        return res.status(401).json({ message: "token has not provided" });
       }
@@ -33,7 +33,7 @@ dotenv.config()
 
    } catch (error) {
      console.log("internal server error " + error.message);
-     res.status(500).json({ message: "internal server error"  });
+      res.status(500).json({ message: "internal server error"  });
      
    }
 
