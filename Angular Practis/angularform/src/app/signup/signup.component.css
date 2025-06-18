@@ -1,0 +1,112 @@
+.signup-container {
+            background-color: rgba(255, 255, 255, 0.95); /* Slightly translucent white */
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 450px; /* Adjust max-width as needed */
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* More accurate, but still placeholder for KLAND logo styling */
+        .logo-kland {
+            display: inline-block;
+            font-size: 4rem; /* Adjust size */
+            font-weight: 900; /* Bolder */
+            font-family: sans-serif; /* A generic sans-serif for placeholder */
+            color: #2ab7a7; /* Teal color */
+            margin-bottom: 25px;
+            position: relative;
+            line-height: 1;
+            transform: scaleY(0.8) skewX(-10deg); /* Adjust to mimic the logo's distortion */
+            transform-origin: center;
+            letter-spacing: -4px;
+        }
+        .logo-kland::before {
+            content: 'K';
+            position: absolute;
+            left: -5px;
+            top: 0;
+            color: #2ab7a7; /* Teal */
+        }
+        .logo-kland::after {
+            content: 'LAND';
+            position: relative;
+            top: 0;
+            color: #2ab7a7; /* Teal */
+            font-size: 0.7em; /* Smaller for 'LAND' */
+            letter-spacing: 0;
+            margin-left: 0.1em;
+        }
+
+        h4.form-title {
+            font-size: 1.25rem;
+            font-weight: normal;
+            color: #333;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            padding: 14px 18px;
+            font-size: 1rem;
+            background-color: #f8f9fa; /* Light background for inputs */
+            border: 1px solid #e9ecef; /* Light border */
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.25rem rgba(42, 183, 167, 0.25); /* Teal focus glow */
+            border-color: #2ab7a7;
+        }
+
+        .input-group-password {
+            position: relative;
+        }
+        .input-group-password .form-control {
+            padding-right: 45px; /* Space for the icon */
+        }
+        .input-group-password .bi-eye-slash-fill,
+        .input-group-password .bi-eye-fill {
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #6c757d;
+            font-size: 1.1rem;
+            z-index: 100; /* Ensure icon is clickable */
+        }
+
+        .btn-signup {
+            background-color: #2ab7a7; /* Teal color */
+            border-color: #2ab7a7;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            width: 100%;
+            margin-top: 20px;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+
+        .btn-signup:hover {
+            background-color: #25a497; /* Darker teal on hover */
+            border-color: #25a497;
+        }
+
+        .login-text {
+            margin-top: 25px;
+            font-size: 0.95rem;
+            color: #6c757d;
+        }
+
+        .login-text a {
+            color: #2ab7a7; /* Teal color for the link */
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .login-text a:hover {
+            text-decoration: underline;
+        }

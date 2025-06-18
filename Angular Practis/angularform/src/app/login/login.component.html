@@ -1,0 +1,27 @@
+
+<div class="login-container">
+        <div class="logo-kland mb-4">
+            K<span style="font-size: 0.6em; position: relative; top: -0.2em; left: -0.05em; letter-spacing: -1px; display: inline-block;">LAND</span>
+        </div>
+
+        <h4 class="form-title">ENTER YOUR EMAIL TO CONTINUE</h4>
+
+        <form>
+            <div class="mb-3">
+                <input type="email" [(ngModel)]="loginObj.email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="mb-3 input-group-password">
+                <input type="password" [(ngModel)]="loginObj.password" class="form-control" id="password" placeholder="Password">
+                <i class="bi bi-eye-slash-fill" id="togglePassword"></i>
+            </div>
+            <div class="forgot-password-link">
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" (click)="onLogin()" class="btn btn-primary btn-login">Login</button>
+        </form>
+
+        <p class="create-account-text">Don't have an account? <a href="#">Create Account</a></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
