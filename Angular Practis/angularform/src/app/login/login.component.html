@@ -8,14 +8,17 @@
 
         <form>
             <div class="mb-3">
-                <input type="email" [(ngModel)]="loginObj.email" class="form-control" id="email" placeholder="Email">
+                <input  name="email" type="email" [(ngModel)]="loginObj.email" class="form-control" id="email" placeholder="Email" required>
             </div>
             <div class="mb-3 input-group-password">
-                <input type="password" [(ngModel)]="loginObj.password" class="form-control" id="password" placeholder="Password">
+                <input name="password" type="password" [(ngModel)]="loginObj.password" class="form-control" id="password" placeholder="Password">
                 <i class="bi bi-eye-slash-fill" id="togglePassword"></i>
             </div>
             <div class="forgot-password-link">
                 <a href="#">Forgot password?</a>
+            </div>
+            <div class="mb-3">
+                <input  name="phoneCode" type="text" [(ngModel)]="loginObj.phoneCode" class="form-control" id="phoneCode" placeholder="Phone Code">
             </div>
             <button type="submit" (click)="onLogin()" class="btn btn-primary btn-login">Login</button>
         </form>

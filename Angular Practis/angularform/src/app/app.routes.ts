@@ -15,12 +15,10 @@ export const routes:Routes= [
 {
     path :"login",
     component : LoginComponent,
-    children : [
-        {
-            path : "userpage",
-            component : UserpageComponent
-        }
-    ]
+    
 },
-
+ {
+    path : "userpage"
+    ,component : UserpageComponent
+ }
 ]
