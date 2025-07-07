@@ -7,10 +7,11 @@ dotenv.config()
   
    try {
       const tokennn = req.headers.cookie.split("=") // two values are genrated array in tokenn
-      
-      
-      const token = req.headers.cookie.split("=")[1];
       console.log(req.headers);
+      
+      
+      const token = req.headers.cookie.split("=")[0];
+      
       if (!token) {
        return res.status(401).json({ message: "token has not provided" });
       }

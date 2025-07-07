@@ -49,7 +49,7 @@ export const useAuthStore = create((set,get)=>({
         toast.error("Invalid Credentials")
         console.log(error.message);
         
-      }
+      } 
       finally{
         set({authUser : false})
       }

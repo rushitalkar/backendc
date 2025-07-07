@@ -9,7 +9,7 @@ export const genrateToken = (userID , res ) => {
         expiresIn : "7d",
     })
 
-    res.cookie('jwt', token, {
+    res.cookie( token, {
         maxAge : 7 * 24 * 60 *60 * 1000 ,
         httpOnly :true ,
         sameSite : "strict" ,

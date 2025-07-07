@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component , inject } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-userpage',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './userpage.component.css'
 })
 export class UserpageComponent {
+      
+      http: any = inject(HttpClient)
+     
     
 }

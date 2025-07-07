@@ -66,13 +66,13 @@ const login =async(req,res)=>{
            return res.status(400).json({message : "invalid Credintial"})
 
         }
-        const ispasswordcorrect =await bcrypt.compare(password , user.password)
+        const ispasswordcorrect = await bcrypt.compare(password , user.password)
 
         if (!ispasswordcorrect) {
             return res.status(401).json({message : "your password is wrong"})
         }
 
-        genrateToken(user._id , res)
+        genrateToken(user?._id , res)
 
         res.status(200).json({
             _id : user._id,

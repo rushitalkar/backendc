@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { error } from 'console';
+import { error, log } from 'console';
 
 @Component({
   selector: 'app-login',
@@ -28,7 +28,7 @@ export class LoginComponent {
 
     osVersion: "" 
    }
-
+   data : any = []
    router =inject(Router)
    http = inject(HttpClient)
   headers = new HttpHeaders({
@@ -39,6 +39,9 @@ export class LoginComponent {
       console.log("login in Success",res)
       localStorage.setItem("tokken" , res.data.email)
       this.router.navigateByUrl('userpage')
+      this.data = res.data
+      localStorage.setItem("user" , JSON.stringify(this.data))
+      
     },error => {
       console.log("wrong Creditial",error.message)
     })
