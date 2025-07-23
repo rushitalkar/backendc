@@ -2,9 +2,9 @@
 
 $s = "rushi";
 
-for ($i=0; $i < 4 ; $i++) { 
+for ($i=0; $i < 9 ; $i++) { 
     for ($j= 0; $j < $i; $j++) {
-       echo $s."i";
+       echo "i";
 
     }
     echo "\n ";
