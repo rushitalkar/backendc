@@ -5,6 +5,9 @@ import js from '../assets/js.png'
 import ts from '../assets/typescript.png'
 import tailwind from '../assets/Tailwind.png'
 import oracle from '../assets/oracle.png'
+import ui from '../assets/ui.jpg'
+import ux from '../assets/ux.png'
+
 const Experience = () => {
     const cardItem = [
     {
@@ -36,6 +39,16 @@ const Experience = () => {
         id : 6,
         logo : oracle,
         name : "Oracle"
+    },
+    {
+        id : 6,
+        logo : ui,
+        name : "UI"
+    },
+    {
+        id : 6,
+        logo : ux,
+        name : "UX"
     }
 
 
@@ -46,7 +59,7 @@ const Experience = () => {
     <div name="Experience" className='max-w-screen-2xl container mx-auto px-4 md:px-20 mt-20'>
       <div>
         <h1 className='text-3xl font-bold md-5'>Experince</h1>
-        <p className='font-semibold'>I'have more than 2 years of experince in below Technologies.
+        <p className='font-semibold'>I am Fresher in Web Development.
         </p>
         <div className='grid grid-cols-2 md:grid-cols-4 my-5 gap-3'>
            {

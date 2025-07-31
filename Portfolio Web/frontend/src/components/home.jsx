@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { SiIndeed } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
@@ -7,6 +7,7 @@ import { DiMongodb } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
+
 import dev from '../assets/dev.png'
 
 
@@ -21,7 +22,7 @@ const Home = () => {
                         <span className='text-xl'>Welcome in my Feed</span>
                         <div className='flex space-x-1 text-2xl md:text-4xl'>
 
-                            <h1>Hello, I'm a </h1>
+                            <h1>Hello,I'm a </h1>
                             {/* <span className='text-red-700 font-bold'>Developer</span> */}
                             <ReactTyped
                                className='text-red-700 font-bold'
@@ -30,7 +31,10 @@ const Home = () => {
                                     "Designer",
                                     "Freelancer",
                                     "Coder",
-                                    "Programmer"
+                                    "Programmer",
+                                    "UI/UX Designer",
+                                    "Desktop Support Enginner"
+
                                 ]}
                                 typeSpeed={100}
                                 loop= {true}
@@ -38,7 +42,7 @@ const Home = () => {
 
                         </div>
                         <br />
-                        <p className='text-sm md:text-md text-justify'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, obcaecati aspernatur nisi provident inventore iure magni ullam quis. Earum ab error culpa, odit veritatis praesentium.</p>
+                        <p className='text-sm md:text-md text-justify'>My Self Rushikesh Talkar, I am a Web Developer with a keen eye for MERN Stack. With a background in IT, I strive to create impactful and visually stunning Software solutions that leave a lasting impression        .</p>
                         <br />
                         <div className='flex flex-col md:flex-row items-center justify-between  flex-y-2 md:flex-y-0 '>
                             <div className='space-y-2'>
@@ -46,7 +50,7 @@ const Home = () => {
                                 <ul className='flex space-x-5'>
                                     <li>
                                         {" "}
-                                        <a href="" ><FaFacebookSquare className='text-2xl cursor-pointer' /></a>
+                                        <a href="https://www.instagram.com/" ><FaInstagram className='text-2xl cursor-pointer' /></a>
                                         
                                     </li>
 
@@ -57,7 +61,7 @@ const Home = () => {
 
                                     <li>
                                         {" "}
-                                       <a href=""> <SiIndeed className='text-2xl cursor-pointer' /></a>
+                                       <a href="https://profile.indeed.com/?hl=en_IN&co=IN&from=gnav-homepage"> <SiIndeed className='text-2xl cursor-pointer' /></a>
                                     </li>
                                 </ul>
                             </div>

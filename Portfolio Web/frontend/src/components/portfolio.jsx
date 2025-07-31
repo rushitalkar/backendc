@@ -4,7 +4,10 @@ import mongo from '../assets/mongodb.jpg'
 import express from '../assets/express.png'
 import react from '../assets/reactjs.png'
 import node from '../assets/node.png'
+import figma from '../assets/figma.png'
+import desktop from '../assets/desktop.jpg'
 const Portfolio = () => {
+   
     const cardItem = [
     {
        id : 1,
@@ -30,6 +33,16 @@ const Portfolio = () => {
         id : 5,
         logo : python,
         name : "Python"
+    },
+    {
+        id : 6,
+        logo : figma,
+        name : "Figma"
+    },
+    {
+        id : 7,
+        logo : desktop,
+        name : "Desktop Support"
     }
 
 
@@ -48,9 +61,10 @@ const Portfolio = () => {
                     <div>
                         <div className=' px-2 font-bold mb-2 text-2xl'>{item.name}</div>
                     </div>
-                    <div className='flex space-x-2 justify-around'>
-                        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Video</button>
-                        <button className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded'>Source Code</button>
+                    <div >
+                        <button onClick={()=>{
+                            return window.open("https://github.com/rushitalkar/backendc/tree/main")
+                        }}  className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded'>Source Code</button>
                     </div>
                 </div>
                                 

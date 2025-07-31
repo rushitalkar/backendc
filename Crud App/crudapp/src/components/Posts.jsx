@@ -25,8 +25,6 @@ const Posts = () => {
      })
      setPosts(newUpdaetPost)
      }
-    
-     
     } catch (error) {
       
     }

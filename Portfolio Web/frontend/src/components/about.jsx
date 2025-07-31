@@ -18,9 +18,9 @@ function About() {
           Education & Training
         </h1>
         <span>
-          [Degree/Certification], [Institution], [Year] [Degree/Certification],
-          [Institution], [Year] [Relevant Course], [Platform/Institution],
-          [Year]
+          Diploma of Computer Technology in Goverment Polytechnique Pen in  2023 And Now I am Pursuing Bachelor of Computer Engineering in Yadavrao Tasgavkar College of Engineering And Management.
+          I have Completed FullStack Developement Course From Prognoz Institute at Vashi Maharastra in 2024 ,
+          
         </span>
         <br />
         <br />
@@ -28,8 +28,7 @@ function About() {
           Skills & Expertise
         </h1>
         <span>
-          Proficient in [Programming Languages] Experienced with [Software
-          Tools/Technologies] Strong grasp of [Design Principles/Concepts]
+          Proficient in HTML , CSS , JavaScript , ReactJS , NodeJS , MongoDB Experienced with Frameworks/Libraries like ExpressJS,  Figma, Bootstrap and Tailwind Strong grasp of Design Principles/Concepts
           Excellent problem-solving skills Effective communicator and
           collaborator
         </span>
@@ -39,21 +38,9 @@ function About() {
           Professional Experience
         </h1>
         <span>
-          [Job Title], [Company/Organization], [Dates] [Brief description of
-          responsibilities and achievements] [Job Title],
-          [Company/Organization], [Dates] [Brief description of responsibilities
-          and achievements] [Freelance/Contract Work], [Client/Organization],
-          [Dates] [Brief description of projects and contributions]
+          I am Fresher with 6 months of experience in MERN Stack and UI/UX Field.
         </span>
-        <br />
-        <br />
-        <h1 className="text-green-600 font-semibold text-xl">
-          Achievements & Awards
-        </h1>
-        <span>
-          [Award/Recognition], [Organization/Institution], [Year] [Achievement],
-          [Organization/Platform], [Year]
-        </span>
+        
         <br />
         <br />
         <h1 className="text-green-600 font-semibold text-xl">

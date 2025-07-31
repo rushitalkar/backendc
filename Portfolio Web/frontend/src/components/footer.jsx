@@ -1,6 +1,7 @@
 import React from "react";
+import { SiIndeed } from "react-icons/si";
 import {
-  FaFacebook,
+  
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa6";
@@ -12,7 +13,7 @@ function Footer() {
         <div className="max-w-screen-2xl container mx-auto px-4 md:px-20">
           <div className=" flex flex-col items-center justify-center">
             <div className="flex space-x-4">
-              <FaFacebook size={24} />
+              <SiIndeed size={24} />
               <FaInstagram size={24} />
               <FaLinkedinIn size={24} />
             </div>

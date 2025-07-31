@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Navbar from './components/navbar'
+import {Toaster} from 'react-hot-toast'
 import './App.css'
 import Home from './components/home'
 import About from './components/about'
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+       <div>
        <Navbar/>
        <Home/>
        <About/>
@@ -20,6 +22,8 @@ function App() {
        <Experience/>
        <Contact/>
        <Footer/>
+       </div>
+       <Toaster/>
     </>
   )
 }
