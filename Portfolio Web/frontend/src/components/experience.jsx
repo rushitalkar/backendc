@@ -41,12 +41,12 @@ const Experience = () => {
         name : "Oracle"
     },
     {
-        id : 6,
+        id : 7,
         logo : ui,
         name : "UI"
     },
     {
-        id : 6,
+        id : 8,
         logo : ux,
         name : "UX"
     }

@@ -30,18 +30,16 @@ function Contact() {
     <>
       <div
         name="Contacts"
-        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
+        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16 "
       >
         <h1 className="text-3xl font-bold mb-4">Contact me</h1>
         <span>Please fill out the form below to contact me</span>
         <div className=" flex flex-col items-center justify-center mt-5">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            //  action="https://getform.io/f/aqomxjla"
-            //  method="POST"
             className="bg-slate-200 w-96 px-8 py-6 rounded-xl"
           >
-            <h1 className="text-xl font-semibold mb-4">Send Your Message</h1>
+            <h1 style={{color:"#1C2029"}} id="send" className="text-xl font-semibold mb-4 ">Send Your Message</h1>
             <div className="flex flex-col mb-4">
               <label className="block text-gray-700">FullName</label>
               <input

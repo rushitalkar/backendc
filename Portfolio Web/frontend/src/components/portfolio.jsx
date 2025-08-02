@@ -5,44 +5,45 @@ import express from '../assets/express.png'
 import react from '../assets/reactjs.png'
 import node from '../assets/node.png'
 import figma from '../assets/figma.png'
-import desktop from '../assets/desktop.jpg'
+
 const Portfolio = () => {
    
     const cardItem = [
     {
        id : 1,
        logo : mongo,
-       name : "MongoDB"
+       name : "MongoDB",
+       code : "Source Code"
     },
     {
         id : 2,
        logo : express,
-       name : "ExpressJS"
+       name : "ExpressJS",
+       code : "Source Code"
     },
     {
         id : 3,
        logo : react,
-       name : "ReactJS"
+       name : "ReactJS",
+       code : "Source Code"
     },
     {
         id : 4,
        logo : node,
-       name : "NodeJS"
+       name : "NodeJS",
+       code : "Source Code"
     },
     {
         id : 5,
         logo : python,
-        name : "Python"
+        name : "Python",
+        code : "Source Code"
     },
     {
         id : 6,
         logo : figma,
-        name : "Figma"
-    },
-    {
-        id : 7,
-        logo : desktop,
-        name : "Desktop Support"
+        name : "Figma",
+        code : "Projects"
     }
 
 
@@ -63,8 +64,12 @@ const Portfolio = () => {
                     </div>
                     <div >
                         <button onClick={()=>{
-                            return window.open("https://github.com/rushitalkar/backendc/tree/main")
-                        }}  className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded'>Source Code</button>
+                            if(item.name == "Figma"){
+                                return window.open("https://www.figma.com/files/team/1215698769135066948/recents-and-sharing?fuid=1215698757814737666")
+                            }else{
+                                 return window.open("https://github.com/rushitalkar/backendc/tree/main")
+                            }
+                        }}  className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded'>{item.code}</button>
                     </div>
                 </div>
                                 
