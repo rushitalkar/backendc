@@ -12,9 +12,10 @@ const Navbar = () => {
   let [mode, setMode] = React.useState(false)
  let modeColor = document.querySelector('.mode');
  let [color , setColor] = useState("white")
-
+ let contact = document.querySelector('#Contact')
  let send = document.querySelector('#send')
-
+ console.log(contact);
+ 
  
  let handle = () => {
    if (mode === false) {
@@ -68,7 +69,7 @@ const Navbar = () => {
           </div>
 
           <div className='flex space-x-6'>
-          <button className='hover:scale-105'  onClick={handle} value={mode} >{mode ? <IoIosSunny size={22}/> : <IoIosMoon size={22}/>}</button>
+          <button className='hover:scale-105 cursor-pointer'  onClick={handle} value={mode} >{mode ? <IoIosSunny size={22}/> : <IoIosMoon size={22}/>}</button>
 
           <ul className=' hidden md:flex space-x-8'>
              {navItems.map((item) => (
