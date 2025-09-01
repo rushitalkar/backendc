@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Book Store Application Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rushitalkar/backendc.git"
+  },
+  "keywords": [
+    "book"
+  ],
+  "author": "Rushikesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rushitalkar/backendc/issues"
+  },
+  "homepage": "https://github.com/rushitalkar/backendc#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
