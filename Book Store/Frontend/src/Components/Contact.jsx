@@ -4,7 +4,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className="isolate  max-w-screen-2xl container my-3 ">
-      
+    
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-4xl font-semibold tracking-tight text-balance sm:text-5xl">Contact</h2>
       </div>
