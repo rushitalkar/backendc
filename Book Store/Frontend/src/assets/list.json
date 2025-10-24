@@ -5,7 +5,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "Free",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/shyamachi_aai2021.pdf"
     },
      {
         "id" : 1,
@@ -13,7 +14,9 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "Free",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/parshuram_sandeep_surve.pdf"
+
     },
      {
         "id" : 1,
@@ -21,7 +24,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/rajpratipatya_pradyum_chilkewar.pdf"
     },
      {
         "id" : 1,
@@ -29,7 +33,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/pruthvisanyogita_ankush_shingade.pdf"
     },
      {
         "id" : 1,
@@ -37,7 +42,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "Free",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/deadline_prajakta_deshpande.pdf"
     },
      {
         "id" : 1,
@@ -45,7 +51,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/corona_ankush_shingade.pdf"
     },
      {
         "id" : 1,
@@ -53,7 +60,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "Free",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/buddhibalachi_gosht_stephen_zwaig_vrishali_joshi.pdf"
     },
      {
         "id" : 1,
@@ -62,6 +70,7 @@
         "Prize" : 0,
         "Category" : "crime",
         "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        ,"read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/detective_negative_nimish_sonar.pdf"
     },
      {
         "id" : 1,
@@ -69,7 +78,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/charmayogi_ankush_shingade.pdf"
     },
      {
         "id" : 1,
@@ -77,7 +87,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "Free",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/phakiraa.pdf"
     },
      {
         "id" : 1,
@@ -85,7 +96,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/nyay_jagdish_khandewale.pdf"
     },
      {
         "id" : 1,
@@ -93,7 +105,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "Free",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/chandrayaan_ankush_shingade.pdf"
     },
      {
         "id" : 1,
@@ -101,7 +114,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/budhabhushan__sambhajiraje.pdf"
     },
      {
         "id" : 1,
@@ -109,7 +123,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/panipatachi_bakhar.pdf"
     },
      {
         "id" : 1,
@@ -117,7 +132,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "Free",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/panipatachi_bakhar.pdf"
     },
      {
         "id" : 1,
@@ -125,7 +141,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/porus_puran_surekha_terdalkar.pdf"
     },
      {
         "id" : 1,
@@ -133,7 +150,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/shivrajyabhishek_amol_suryawanshi.pdf"
     },
      {
         "id" : 1,
@@ -141,7 +159,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "Free",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/jhashirani_lakshmibai_ashok_bendkhale_e.pdf"
     },
      {
         "id" : 1,
@@ -149,7 +168,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/maharani_yesubai_ashok_bendkhale_e.pdf"
     },
      {
         "id" : 1,
@@ -157,7 +177,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/damodar_hari_chaphekar.pdf"
     },
      {
         "id" : 1,
@@ -165,7 +186,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/mavala-2.pdf"
     },
      {
         "id" : 1,
@@ -173,7 +195,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "Free",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/rajmatajijai_ashok_bendkhale_e.pdf"
     },
      {
         "id" : 1,
@@ -181,7 +204,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "crime",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://www.esahity.com/uploads/5/0/1/2/501218/dhagdhagte_yadnyakund_single_page.pdf"
     },
      {
         "id" : 1,
@@ -189,7 +213,8 @@
         "title" : "Godfather",
         "Prize" : 0,
         "Category" : "Free",
-        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png"
+        "image" :"file:///D:/backend/GitHub/backendc/Book%20Store/Frontend/src/assets/read.png",
+        "read_URL" : "https://mail.snmorcollege.org.in/library/chhava.pdf"
     },
      {
         "id" : 1,

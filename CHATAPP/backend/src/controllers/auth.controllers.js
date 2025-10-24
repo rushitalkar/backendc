@@ -66,6 +66,7 @@ const login =async(req,res)=>{
            return res.status(400).json({message : "invalid Credintial"})
 
         }
+        
         const ispasswordcorrect = await bcrypt.compare(password , user.password)
 
         if (!ispasswordcorrect) {

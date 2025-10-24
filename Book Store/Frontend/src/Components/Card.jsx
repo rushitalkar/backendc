@@ -1,7 +1,8 @@
 import React from 'react'
 
-const Card = ({book , bookimage }) => {
+const Card = ({book , bookimage , link }) => {
     
+
   return (
    <div id='card' className="card bg-base-100 w-86 shadow-xl cursor-pointer hover:scale-105 duration-200 hover:shadow-2xl  hover:z-40 ">
   <figure>
@@ -17,7 +18,7 @@ const Card = ({book , bookimage }) => {
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div className="card-actions justify-between">
       <div className="badge badge-outline">${book.Prize}</div>
-      <div className="badge badge-outline hover:bg-pink-500">Buy Now</div>
+      <button onClick={()=>location.href = link} className="badge badge-outline hover:bg-pink-500 cursor-pointer">Read</button>
     </div>
   </div>
 </div>

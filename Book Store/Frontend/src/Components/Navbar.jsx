@@ -12,7 +12,6 @@ const Navbar = () => {
     const checkbox = useRef()
     let root = document.querySelector(':root')
     let [Model , setModel] = useState(false)
-    let navigate = useNavigate()
     let handleclick =()=>{
       setMode(checkbox.current.checked ? "dark" : "light")
       console.log(mode);
@@ -51,6 +50,7 @@ const Navbar = () => {
       <li ><NavLink className={({isActive}) => isActive ? 'bg-pink-500' : ''} to=''>Home</NavLink></li>
       <li ><NavLink className={({isActive}) => isActive ? 'bg-pink-500' : ''} to='course' >Course</NavLink></li>
       <li ><NavLink className={({isActive}) => isActive ? 'bg-pink-500' : ''} to='contact' >Contact</NavLink></li>
+      <li ><NavLink className={({isActive}) => isActive ? 'bg-pink-500' : ''} to='/about' >About</NavLink></li>
 
       <li><a>About</a></li>
     </>
@@ -115,7 +115,7 @@ const Navbar = () => {
             <button onClick={()=> setModel(true)}  className="  bg-black p-1 px-2 text-white hover:bg-slate-700 rounded cursor-pointer"
              >Login</button>
              {Model && <div className='md:w-[1264px] fixed inset-0 z-50 flex items-center justify-center  backdrop-blur-md 
-'><Login  setmodel={setModel}/></div> }
+'><Login setmodel={setModel}/></div> }
           </div>
       
         </div>

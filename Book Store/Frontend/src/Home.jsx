@@ -5,6 +5,7 @@ import Footer from './Components/Footer'
 import Freebook from './Components/Freebook'
 const Home = () => {
   return (
+    
     <>
     
       <Banner />

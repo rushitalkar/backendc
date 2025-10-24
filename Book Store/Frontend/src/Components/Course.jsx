@@ -1,14 +1,28 @@
 import React, { use } from 'react'
 import Banner from './Banner'
 import Card from './Card';
-import books from '../assets/list.json'
 import readBook from '../Assets/read.png'
 import { useNavigate } from 'react-router-dom';
-
+import { useState , useEffect } from 'react';
+import axios from 'axios';
 const Course = () => {
   let navigate = useNavigate()
   
+ const [book,setBook] = useState([])
 
+ useEffect(()=>{
+  try {
+    (async()=>{
+       const responce = await axios.get("http://localhost:4001/api/book")
+       console.log(responce.data);
+       setBook(responce.data)
+       
+    })()
+  } catch (error) {
+    console.log(error);
+    
+  }
+ },[])
   
   return (
    <div>
@@ -20,8 +34,8 @@ const Course = () => {
           </div>
           <div className='grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-4 mt-4'>
               {
-                books.map((book , i)=>
-                 <Card key={i} book={book} bookimage={readBook} />
+                book.map((book , i)=>
+                 <Card key={i} book={book} bookimage={readBook} link={book.read_URL} />
 
                 )
             }
