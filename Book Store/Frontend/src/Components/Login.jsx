@@ -3,15 +3,41 @@ import { useRef } from 'react'
 import { X } from 'lucide-react';
 import { data, NavLink } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+
 const Login = ({setmodel , mode }) => {
+ 
    const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm()
-  const onSubmit = (data) => {
-    setmodel(false)
+  const onSubmit = async (data) => {
+ let userInfo = {
+      email: data.email,
+      password: data.password,
+    }
   
+  try {
+
+   const res = await axios.post("http://localhost:4001/user/login", userInfo)
+  console.log(res);
+    
+    
+   if (res.data) {
+     toast.success(res.data.message)
+     localStorage.setItem("User" , JSON.stringify(res.data.user))
+     setmodel(false)
+     setTimeout(() => {
+        window.location.reload()
+
+     },2000)
+   }
+  } catch (error) {
+    toast.error(error.response.data.message)
+  }  
     
   }
   return (

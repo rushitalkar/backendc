@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import {  toast } from 'react-toastify';
 
 const SignupPage =  () => {
   let navigate = useNavigate()
@@ -33,11 +34,12 @@ const SignupPage =  () => {
     
     
    if (res.data) {
-     alert("User Created Successfully")
-
+     toast.success("User Created Successfully")
+     localStorage.setItem("User" , JSON.stringify(res.data.newUser))
+     navigate(-1)
    }
   } catch (error) {
-    alert("User Email Already Exist" , error)
+    toast.error("User Email Already Exist" , error)
   }
   }
   return (

@@ -1,12 +1,23 @@
 import React, { use } from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import { Navigate, NavLink } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 import { useRef } from 'react'
-import Course from './Course'
 import Login from './Login'
-import { useNavigate } from 'react-router-dom'
+import { useAuth } from '../store/AuthProvider'
+import { toast } from 'react-toastify'
+import Logout from './Logout'
 const Navbar = () => {
+    const [authUser , setAuthUser] = useAuth()
+   useEffect(() => {
+     
+      if (!authUser) {
+      toast.error("Please Login First You Can't Access This Page")
+    }else{
+      toast.success("You can now access Course Page")
+    }
+   },[])
+    
     const [scroll, setScroll] = useState(false)
     const [mode ,setMode] = useState(null)
     const checkbox = useRef()
@@ -50,7 +61,6 @@ const Navbar = () => {
       <li ><NavLink className={({isActive}) => isActive ? 'bg-pink-500' : ''} to=''>Home</NavLink></li>
       <li ><NavLink className={({isActive}) => isActive ? 'bg-pink-500' : ''} to='course' >Course</NavLink></li>
       <li ><NavLink className={({isActive}) => isActive ? 'bg-pink-500' : ''} to='contact' >Contact</NavLink></li>
-      <li ><NavLink className={({isActive}) => isActive ? 'bg-pink-500' : ''} to='/about' >About</NavLink></li>
 
       <li><a>About</a></li>
     </>
@@ -110,13 +120,15 @@ const Navbar = () => {
              <svg aria-label="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></g></svg>
 
           </label>
-
-          <div className=" ">
+  {
+    authUser ? <Logout/>  :
+    <div className=" ">
             <button onClick={()=> setModel(true)}  className="  bg-black p-1 px-2 text-white hover:bg-slate-700 rounded cursor-pointer"
-             >Login</button>
-             {Model && <div className='md:w-[1264px] fixed inset-0 z-50 flex items-center justify-center  backdrop-blur-md 
-'><Login setmodel={setModel}/></div> }
+             > Login</button>
+             {Model && <div className='md:w-[1264px] fixed inset-0 z-50 flex items-center justify-center  backdrop-blur-md '><Login setmodel={setModel}/></div> }
           </div>
+  }
+          
       
         </div>
 
