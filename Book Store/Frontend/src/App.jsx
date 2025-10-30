@@ -10,6 +10,7 @@ import SignupPage from './loginComponents/SignupPage'
 import Contact from './Components/Contact'
 import { useAuth } from './store/AuthProvider'
 import { Navigate } from 'react-router-dom'
+import About from './Components/About'
 function App() {
    const [ authUser] = useAuth()
    console.log(authUser);
@@ -22,7 +23,8 @@ function App() {
           <Route path='course' element={authUser ? <Course/> : <Navigate to='/signup'/> }/>
           <Route path='signup' element={<SignupPage/>}/>
           <Route path='contact' element={<Contact/>}/>
-          
+          <Route path='about' element={<About/>}/>
+
       </Route>
       
     )
