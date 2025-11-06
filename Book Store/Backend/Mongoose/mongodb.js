@@ -3,7 +3,7 @@ import dotenvx from '@dotenvx/dotenvx'
 dotenvx.config()
 
 const connectDB =async ()=>{
-    const URL = process.env.MONGODB_URI
+    const URL = process.env.MONGODB_URI || "mongodb+srv://rushikeshtalkar2305_db_user:rushiTalkar@bookstore.cyepyme.mongodb.net/"
 
     console.log(URL);
     
