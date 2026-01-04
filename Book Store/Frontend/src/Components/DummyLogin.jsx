@@ -1,7 +1,5 @@
 
 import Login from '../assets/login.png'
-import React from 'react'
-import { useRef } from 'react'
 import { X } from 'lucide-react';
 import { data, NavLink } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
